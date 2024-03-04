@@ -13,20 +13,20 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://gaozengqing.github.io/ZhiXingGe/masonry/"/>
+    <link rel="canonical" href="https://gaozengqing.github.io/ZhiXingGe/2024/03/04/深浅拷贝/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="知行阁---知行合一,思想与行动的巨人,">
-<meta property="og:type" content="website">
-<meta property="og:title" content="星辰画卷">
-<meta property="og:url" content="https://gaozengqing.github.io/ZhiXingGe/masonry/index.html">
+        <meta name="description" content="强调！深浅拷贝主要针对的是Object类型 深拷贝深拷贝则是指完全复制对象或数组，包括其所有的嵌套属性或元素。 实现方法 JSON.parse(JSON.stringify({a:1,b:{c:2}})) lodash 的 _.cloneDeep() 方法 等等  123456789101112131415var obj&#x3D;&#123;a:1,b:&#123;c:2&#125;&#125;var o">
+<meta property="og:type" content="article">
+<meta property="og:title" content="深浅拷贝">
+<meta property="og:url" content="https://gaozengqing.github.io/ZhiXingGe/2024/03/04/%E6%B7%B1%E6%B5%85%E6%8B%B7%E8%B4%9D/index.html">
 <meta property="og:site_name" content="知行阁">
-<meta property="og:description" content="知行阁---知行合一,思想与行动的巨人,">
+<meta property="og:description" content="强调！深浅拷贝主要针对的是Object类型 深拷贝深拷贝则是指完全复制对象或数组，包括其所有的嵌套属性或元素。 实现方法 JSON.parse(JSON.stringify({a:1,b:{c:2}})) lodash 的 _.cloneDeep() 方法 等等  123456789101112131415var obj&#x3D;&#123;a:1,b:&#123;c:2&#125;&#125;var o">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-03-01T13:20:31.000Z">
-<meta property="article:modified_time" content="2024-03-01T14:36:51.876Z">
+<meta property="article:published_time" content="2024-03-04T12:37:43.000Z">
+<meta property="article:modified_time" content="2024-03-04T15:33:36.992Z">
 <meta property="article:author" content="GaoZengQing">
 <meta property="article:tag" content="知行阁">
 <meta name="twitter:card" content="summary">
@@ -41,7 +41,7 @@
     
     <title>
         
-            星辰画卷 -
+            深浅拷贝 -
         
         知行阁
     </title>
@@ -530,53 +530,238 @@
             <div class="main-content">
 
                 
-                    <div class="page-template-container">
+                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
+    <div class="article-content-container">
+
+        <div class="article-title relative w-full">
+            
+                <div class="w-full flex items-center pt-6 justify-start">
+                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">深浅拷贝</h1>
+                </div>
+            
+            </div>
+
+        
+            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="/ZhiXingGe/images/avatar.jpg">
+                </div>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">Gao Zeng Qing</span>
+                        
+                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv2</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2024-03-04 20:37:43</span>
+        <span class="mobile">2024-03-04 20:37:43</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2024-03-04 23:33:36</span>
+            <span class="mobile">2024-03-04 23:33:36</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
     
     
+
     
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>906 Words</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>4 Mins</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
         
 
-<h1 class="page-title-header">星辰画卷</h1>
-  
-<div class="loading-placeholder">
-    <div class="flex-grid generic-card">
-        <div class="card loading"></div>
-        <div class="card loading"></div>
-        <div class="card loading"></div>
+        
+
+
+        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+            <p><strong>强调！深浅拷贝主要针对的是Object类型</strong></p>
+<h1 id="深拷贝"><a href="#深拷贝" class="headerlink" title="深拷贝"></a>深拷贝</h1><p>深拷贝则是指完全复制对象或数组，包括其所有的嵌套属性或元素。</p>
+<h2 id="实现方法"><a href="#实现方法" class="headerlink" title="实现方法"></a>实现方法</h2><ol>
+<li>JSON.parse(JSON.stringify({a:1,b:{c:2}}))</li>
+<li>lodash 的 _.cloneDeep() 方法</li>
+<li>等等</li>
+</ol>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj=&#123;<span class="attr">a</span>:<span class="number">1</span>,<span class="attr">b</span>:&#123;<span class="attr">c</span>:<span class="number">2</span>&#125;&#125;</span><br><span class="line"><span class="keyword">var</span> obj2=<span class="title class_">JSON</span>.<span class="title function_">parse</span>(<span class="title class_">JSON</span>.<span class="title function_">stringify</span>(obj))</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj2);</span><br><span class="line">obj2.<span class="property">a</span>=<span class="number">3</span></span><br><span class="line">obj2.<span class="property">b</span>.<span class="property">c</span>=<span class="number">4</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj2);</span><br><span class="line"></span><br><span class="line"><span class="comment">// &#123; a: 1, b: &#123; c: 2 &#125; &#125;</span></span><br><span class="line"><span class="comment">// &#123; a: 1, b: &#123; c: 2 &#125; &#125;</span></span><br><span class="line"><span class="comment">// &#123; a: 1, b: &#123; c: 2 &#125; &#125;</span></span><br><span class="line"><span class="comment">// &#123; a: 3, b: &#123; c: 4 &#125; &#125;</span></span><br><span class="line"><span class="comment">// 可以看出ojb使用JSON.parse(JSON.stringify())完完全全克隆了一个独立的对象obj2，两者独立</span></span><br><span class="line"><span class="comment">// 但是不能处理函数和循环引用的对象，也不能复制特殊的对象</span></span><br></pre></td></tr></table></figure></div>
+
+
+<h1 id="浅拷贝"><a href="#浅拷贝" class="headerlink" title="浅拷贝"></a>浅拷贝</h1><p>浅拷贝是指只复制对象或数组的第一层属性或元素，如果对象或数组的属性或元素也是对象或数组，那么复制的就只是这个对象或数组的引用，而不是对象或数组本身。</p>
+<h2 id="实现方法-1"><a href="#实现方法-1" class="headerlink" title="实现方法"></a>实现方法</h2><ol>
+<li>object.assign()</li>
+<li>数组的slice()</li>
+<li>数组的concat()</li>
+<li>…运算符</li>
+</ol>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ...</span></span><br><span class="line"><span class="keyword">var</span> obj=&#123;</span><br><span class="line">    <span class="attr">name</span>:<span class="string">&#x27;bob&#x27;</span>,</span><br><span class="line">    <span class="attr">age</span>:<span class="number">20</span>,</span><br><span class="line">    <span class="attr">addr</span>:&#123;</span><br><span class="line">        <span class="attr">city</span>:<span class="string">&#x27;xxx市&#x27;</span>,</span><br><span class="line">        <span class="attr">privince</span>:<span class="string">&#x27;xxx县&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> obj2=&#123;...obj&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj2);<span class="comment">//输出&#123; name: &#x27;bob&#x27;, age: 20, addr: &#123; city: &#x27;xxx市&#x27;, privince: &#x27;xxx县&#x27; &#125; &#125;</span></span><br><span class="line">obj2.<span class="property">name</span>=<span class="string">&#x27;tom&#x27;</span></span><br><span class="line">obj2.<span class="property">addr</span>.<span class="property">city</span>=<span class="string">&#x27;宜昌市&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj);<span class="comment">//输出&#123; name: &#x27;bob&#x27;, age: 20, addr: &#123; city: &#x27;宜昌市&#x27;, privince: &#x27;xxx县&#x27; &#125; &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// ---------------------------------------</span></span><br><span class="line"><span class="keyword">var</span> arr=[<span class="number">1</span>,&#123;<span class="attr">car</span>:<span class="string">&#x27;bmw&#x27;</span>,<span class="attr">num</span>:&#123;<span class="attr">city</span>:<span class="string">&#x27;xx市&#x27;</span>,<span class="attr">privince</span>:<span class="string">&#x27;yy县&#x27;</span>&#125;&#125;]</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(arr);<span class="comment">//[ 1, &#123; car: &#x27;bmw&#x27;, num: &#123; city: &#x27;xx市&#x27;, privince: &#x27;yy县&#x27; &#125; &#125; ]</span></span><br><span class="line"><span class="keyword">var</span> arr5=[...arr]</span><br><span class="line">arr5[<span class="number">0</span>]=<span class="number">5</span></span><br><span class="line">arr5[<span class="number">1</span>].<span class="property">num</span>.<span class="property">city</span>=<span class="string">&#x27;宜昌市&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(arr);<span class="comment">//[ 1, &#123; car: &#x27;bmw&#x27;, num: &#123; city: &#x27;宜昌市&#x27;, privince: &#x27;yy县&#x27; &#125; &#125; ]</span></span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// slice方法</span></span><br><span class="line"><span class="keyword">var</span> arr=[<span class="number">1</span>,&#123;<span class="attr">car</span>:<span class="string">&#x27;bmw&#x27;</span>,<span class="attr">num</span>:&#123;<span class="attr">city</span>:<span class="string">&#x27;xx市&#x27;</span>,<span class="attr">privince</span>:<span class="string">&#x27;yy县&#x27;</span>&#125;&#125;]</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(arr);<span class="comment">//[ 1, &#123; car: &#x27;bmw&#x27;, num: &#123; city: &#x27;xx市&#x27;, privince: &#x27;yy县&#x27; &#125; &#125; ]</span></span><br><span class="line"><span class="keyword">var</span> arr3=arr.<span class="title function_">slice</span>()</span><br><span class="line">arr3[<span class="number">0</span>]=<span class="number">5</span></span><br><span class="line">arr3[<span class="number">1</span>].<span class="property">num</span>.<span class="property">city</span>=<span class="string">&#x27;宜昌市&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(arr);<span class="comment">//[ 1, &#123; car: &#x27;bmw&#x27;, num: &#123; city: &#x27;宜昌市&#x27;, privince: &#x27;yy县&#x27; &#125; &#125; ]</span></span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// concat方法</span></span><br><span class="line"><span class="keyword">var</span> arr=[<span class="number">1</span>,&#123;<span class="attr">car</span>:<span class="string">&#x27;bmw&#x27;</span>,<span class="attr">num</span>:&#123;<span class="attr">city</span>:<span class="string">&#x27;xx市&#x27;</span>,<span class="attr">privince</span>:<span class="string">&#x27;yy县&#x27;</span>&#125;&#125;]</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(arr);<span class="comment">//[ 1, &#123; car: &#x27;bmw&#x27;, num: &#123; city: &#x27;xx市&#x27;, privince: &#x27;yy县&#x27; &#125; &#125; ]</span></span><br><span class="line"><span class="keyword">var</span> arr4=arr.<span class="title function_">concat</span>()</span><br><span class="line">arr3[<span class="number">0</span>]=<span class="number">5</span></span><br><span class="line">arr3[<span class="number">1</span>].<span class="property">num</span>.<span class="property">city</span>=<span class="string">&#x27;宜昌市&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(arr);<span class="comment">//[ 1, &#123; car: &#x27;bmw&#x27;, num: &#123; city: &#x27;宜昌市&#x27;, privince: &#x27;yy县&#x27; &#125; &#125; ]</span></span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Object.assign方法</span></span><br><span class="line"><span class="keyword">var</span> obj=&#123;</span><br><span class="line">    <span class="attr">name</span>:<span class="string">&#x27;bob&#x27;</span>,</span><br><span class="line">    <span class="attr">age</span>:<span class="number">20</span>,</span><br><span class="line">    <span class="attr">addr</span>:&#123;</span><br><span class="line">        <span class="attr">city</span>:<span class="string">&#x27;xxx市&#x27;</span>,</span><br><span class="line">        <span class="attr">privince</span>:<span class="string">&#x27;xxx县&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> obj2=<span class="title class_">Object</span>.<span class="title function_">assign</span>(&#123;&#125;,obj)<span class="comment">//接收两个参数</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj); <span class="comment">//&#123; name: &#x27;bob&#x27;, age: 20, addr: &#123; city: &#x27;xxx市&#x27;, privince: &#x27;xxx县&#x27; &#125; &#125;</span></span><br><span class="line">obj2.<span class="property">name</span>=<span class="string">&#x27;tom&#x27;</span></span><br><span class="line">obj2.<span class="property">addr</span>.<span class="property">city</span>=<span class="string">&#x27;宜昌市&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj);<span class="comment">//&#123; name: &#x27;bob&#x27;, age: 20, addr: &#123; city: &#x27;宜昌市&#x27;, privince: &#x27;xxx县&#x27; &#125; &#125;</span></span><br></pre></td></tr></table></figure></div>
+<p>&#x2F;&#x2F; 总结：<br>&#x2F;&#x2F; …，slice,concat只复制对象或数组的第一层属性或元素<br>&#x2F;&#x2F; 如果这时对复制的第一层属性或数据操作不会影响到原对象或数组</p>
+<h3 id="手写浅拷贝"><a href="#手写浅拷贝" class="headerlink" title="手写浅拷贝"></a>手写浅拷贝</h3><div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">shallowClone</span>(<span class="params">target</span>)&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">typeof</span> target === <span class="string">&#x27;object&#x27;</span> &amp;&amp; target !== <span class="literal">null</span>)&#123;</span><br><span class="line">        <span class="keyword">const</span> cloneTarget =<span class="title class_">Array</span>.<span class="title function_">isArray</span>(target) ?[] :&#123;&#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">let</span> prop <span class="keyword">in</span> target)&#123;</span><br><span class="line">            <span class="keyword">if</span>(target.<span class="title function_">hasOwnProperty</span>(prop))&#123;</span><br><span class="line">                cloneTarget[prop]=target[prop]</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> cloneTarget</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> target</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 测试</span></span><br><span class="line"><span class="keyword">const</span> obj=&#123;</span><br><span class="line">    <span class="attr">name</span>:<span class="string">&#x27;tom&#x27;</span>,</span><br><span class="line">    <span class="attr">car</span>:&#123;</span><br><span class="line">        <span class="attr">city</span>:<span class="string">&#x27;xxx市&#x27;</span>,</span><br><span class="line">        <span class="attr">province</span>:<span class="string">&#x27;yyy县&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> shallowCloneObj=<span class="title function_">shallowClone</span>(obj)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(shallowCloneObj === obj ); <span class="comment">// false，返回的是一个新对象</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(shallowCloneObj.<span class="property">car</span> === obj.<span class="property">car</span>);<span class="comment">// true，对于对象类型只拷贝了引用</span></span><br></pre></td></tr></table></figure></div>
+        </div>
+
+        
+            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> 深浅拷贝</li>
+        <li><strong>Author:</strong> Gao Zeng Qing</li>
+        <li><strong>Created at
+                :</strong> 2024-03-04 20:37:43</li>
+        
+            <li>
+                <strong>Updated at
+                    :</strong> 2024-03-04 23:33:36
+            </li>
+        
+        <li>
+            <strong>Link:</strong> https://redefine.ohevan.com/2024/03/04/深浅拷贝/
+        </li>
+        <li>
+            <strong>
+                License:
+            </strong>
+            
+
+            
+                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
+            
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+
+        
+
+        
+            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+                
+                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="prev"
+                        rel="prev"
+                        href="/ZhiXingGe/2024/03/04/%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF/"
+                        >
+                            <span class="left arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">事件循环</span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/ZhiXingGe/2024/03/04/%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A/1/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">IIFE</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+                <div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        Comments
     </div>
-</div>
+    
 
-<div id="masonry-container">
-    
-      <div class="masonry-item">
-        <div class="image-container">
-            <img src="https://picsum.photos/id/12/500/800" alt="Lorem ipsum">
-            <div class="image-title">Lorem ipsum</div>
-            <div class="image-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod</div>
-        </div>
-      </div>
-    
-      <div class="masonry-item">
-        <div class="image-container">
-            <img src="https://picsum.photos/id/12/2500/1800" alt="Lorem ipsum2">
-            <div class="image-title">Lorem ipsum2</div>
-            <div class="image-description">Lorem ipsum dolor sit amet</div>
-        </div>
-      </div>
-    
-</div>
-
-
-    
-    <div class="page-template-content markdown-body">
         
             
+    <div class="twikoo-container">
+        <script data-swup-reload-script
+                src='https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js'
+        ></script>
+        <div id="twikoo-comment"></div>
+        <script data-swup-reload-script>
+            function loadTwikoo() {
+                twikoo.init({
+                    el: '#twikoo-comment',
+                    envId: 'https://erwefsfsdf-test.hf.space',
+                });
+            }
+
+            if ('true') {
+                const loadTwikooTimeout = setTimeout(() => {
+                    loadTwikoo();
+                    clearTimeout(loadTwikooTimeout);
+                }, 1000);
+            } else {
+                window.addEventListener('DOMContentLoaded', loadTwikoo);
+            }
+        </script>
+    </div>
+
+
+        
+        
+    
+</div>
+
+            </div>
         
     </div>
-    <div class="page-template-comments">
-        
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title">深浅拷贝</div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B7%B1%E6%8B%B7%E8%B4%9D"><span class="nav-text">深拷贝</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%B3%95"><span class="nav-text">实现方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B5%85%E6%8B%B7%E8%B4%9D"><span class="nav-text">浅拷贝</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%B3%95-1"><span class="nav-text">实现方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%89%8B%E5%86%99%E6%B5%85%E6%8B%B7%E8%B4%9D"><span class="nav-text">手写浅拷贝</span></a></li></ol></li></ol></li></ol>
+
     </div>
 </div>
+        </div>
+    
+</div>
+
 
 
                 
@@ -663,6 +848,27 @@
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-side-tools-container">
