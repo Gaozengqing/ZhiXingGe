@@ -13,22 +13,22 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://gaozengqing.github.io/ZhiXingGe/2024/03/03/爪哇/2/"/>
+    <link rel="canonical" href="https://gaozengqing.github.io/ZhiXingGe/2024/03/06/react/react哲学/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="创建对象的方式 Object.create() {} new  Object.create() 和 {}的区别123456789101112const foo&#x3D;Object.create(&#123;&#125;)  &#x2F;&#x2F;会多创建出来一层  foo.__proto__ &#x3D;&#x3D;&#x3D; &#123;&#125;.prototype  &#x2F;&#x2F; 如果指向创建一层Object.create(Object.proto">
+        <meta name="description" content="React 构建用户界面时，首先会把它分解成一个个 组件，然后，需要把这些组件连接在一起，使数据流经它们。 从原型开始将UI拆解为组件层级结构通俗来讲，就是将一个原型图,合理的拆分为多个组件 使用React构建一个静态版本通过拥有的组件层级结构，构建一个不带任何交互的 UI 渲染代码版本,经常是先构建一个静态版本比较简单，然后再一个个添加交互。构建一个静态版本需要写大量的代码，并不需要什么思考;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="面向对象编程-原型，原型链">
-<meta property="og:url" content="https://gaozengqing.github.io/ZhiXingGe/2024/03/03/%E7%88%AA%E5%93%87/2/index.html">
+<meta property="og:title" content="React哲学">
+<meta property="og:url" content="https://gaozengqing.github.io/ZhiXingGe/2024/03/06/react/React%E5%93%B2%E5%AD%A6/index.html">
 <meta property="og:site_name" content="知行阁">
-<meta property="og:description" content="创建对象的方式 Object.create() {} new  Object.create() 和 {}的区别123456789101112const foo&#x3D;Object.create(&#123;&#125;)  &#x2F;&#x2F;会多创建出来一层  foo.__proto__ &#x3D;&#x3D;&#x3D; &#123;&#125;.prototype  &#x2F;&#x2F; 如果指向创建一层Object.create(Object.proto">
+<meta property="og:description" content="React 构建用户界面时，首先会把它分解成一个个 组件，然后，需要把这些组件连接在一起，使数据流经它们。 从原型开始将UI拆解为组件层级结构通俗来讲，就是将一个原型图,合理的拆分为多个组件 使用React构建一个静态版本通过拥有的组件层级结构，构建一个不带任何交互的 UI 渲染代码版本,经常是先构建一个静态版本比较简单，然后再一个个添加交互。构建一个静态版本需要写大量的代码，并不需要什么思考;">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-03-03T07:15:15.037Z">
-<meta property="article:modified_time" content="2024-03-04T09:36:04.930Z">
+<meta property="article:published_time" content="2024-03-06T00:33:20.000Z">
+<meta property="article:modified_time" content="2024-03-06T01:11:37.091Z">
 <meta property="article:author" content="GaoZengQing">
-<meta property="article:tag" content="js">
+<meta property="article:tag" content="React">
 <meta name="twitter:card" content="summary">
     
     
@@ -41,7 +41,7 @@
     
     <title>
         
-            面向对象编程-原型，原型链 -
+            React哲学 -
         
         知行阁
     </title>
@@ -536,7 +536,7 @@
         <div class="article-title relative w-full">
             
                 <div class="w-full flex items-center pt-6 justify-start">
-                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">面向对象编程-原型，原型链</h1>
+                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">React哲学</h1>
                 </div>
             
             </div>
@@ -557,35 +557,19 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2024-03-03 15:15:15</span>
-        <span class="mobile">2024-03-03 15:15:15</span>
+        <span class="desktop">2024-03-06 08:33:20</span>
+        <span class="mobile">2024-03-06 08:33:20</span>
         <span class="hover-info">Created</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-03-04 17:36:04</span>
-            <span class="mobile">2024-03-04 17:36:04</span>
+            <span class="desktop">2024-03-06 09:11:37</span>
+            <span class="mobile">2024-03-06 09:11:37</span>
             <span class="hover-info">Updated</span>
         </span>
     
 
-    
-        <span class="article-categories article-meta-item">
-            <i class="fa-regular fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/ZhiXingGe/categories/%E7%88%AA%E5%93%87/">爪哇</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
     
     
         <span class="article-tags article-meta-item">
@@ -593,7 +577,7 @@
             <ul>
                 
                     <li>
-                        <a href="/ZhiXingGe/tags/js/">js</a>&nbsp;
+                        <a href="/ZhiXingGe/tags/React/">React</a>&nbsp;
                     </li>
                 
             </ul>
@@ -603,12 +587,12 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>878 Words</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>627 Words</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fa-regular fa-clock"></i>&nbsp;<span>4 Mins</span>
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>2 Mins</span>
         </span>
     
     
@@ -627,42 +611,15 @@
 
 
         <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <h1 id="创建对象的方式"><a href="#创建对象的方式" class="headerlink" title="创建对象的方式"></a>创建对象的方式</h1><ol>
-<li>Object.create()</li>
-<li>{}</li>
-<li>new</li>
-</ol>
-<h2 id="Object-create-和-的区别"><a href="#Object-create-和-的区别" class="headerlink" title="Object.create() 和 {}的区别"></a>Object.create() 和 {}的区别</h2><div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> foo=<span class="title class_">Object</span>.<span class="title function_">create</span>(&#123;&#125;)  </span><br><span class="line"><span class="comment">//会多创建出来一层  foo.__proto__ === &#123;&#125;.prototype  </span></span><br><span class="line"><span class="comment">// 如果指向创建一层Object.create(Object.prototype)</span></span><br><span class="line"><span class="keyword">const</span> boo=&#123;&#125;</span><br><span class="line"></span><br><span class="line">foo.<span class="property">__proto__</span>.<span class="property">__proto__</span>=== <span class="title class_">Object</span>.<span class="property"><span class="keyword">prototype</span></span></span><br><span class="line">boo=__proto__=== <span class="title class_">Object</span>.<span class="property"><span class="keyword">prototype</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// Object.create() 创建了一个对象</span></span><br><span class="line"><span class="comment">// let p = Object.create(q)  -&gt; p.__proto__=q</span></span><br><span class="line"><span class="comment">// 当我们使用p对象的一个方法或属性的时候，如果p上面没有就去q上面找</span></span><br></pre></td></tr></table></figure></div>
-<h2 id="new"><a href="#new" class="headerlink" title="new"></a>new</h2><div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">Person</span>(<span class="params">name</span>)&#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">name</span>=name</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">Person</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">getName</span>=<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">name</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> p=<span class="keyword">new</span> <span class="title class_">Person</span>(<span class="string">&quot;xxx&quot;</span>)</span><br><span class="line"><span class="comment">// new 创建一个对象，指向构造函数的原型</span></span><br><span class="line">p.<span class="property">__proto__</span> ===  <span class="title class_">Person</span>.<span class="property"><span class="keyword">prototype</span></span></span><br><span class="line"><span class="comment">// 构造函数上，有个原型(是个对象) 里面有constructor函数，就是这个构造函数</span></span><br><span class="line"><span class="title class_">Person</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">constructor</span> === <span class="title class_">Person</span></span><br><span class="line"><span class="comment">// p对象的构造函数，是Person</span></span><br><span class="line">p.<span class="property">constructor</span> === <span class="title class_">Person</span></span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
-
-<h2 id="new-关键字到底干了什么"><a href="#new-关键字到底干了什么" class="headerlink" title="new 关键字到底干了什么"></a>new 关键字到底干了什么</h2><!-- 参考40行的代码 -->
-<ul>
-<li>创建一个对象</li>
-<li>该对象的原型，指向这个Function的prototype</li>
-<li>该对象实现了这个构造函数的方法<ul>
-<li>如果没有返回值，则返回我创建的这个对象</li>
-<li>如果有返回值，是一个对象，则返回该对象</li>
-<li>如果有返回值，不是一个对象，则返回我创建的这个对象<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">// const a= new A()  -&gt; a.__proto__ = A.prototype</span></span><br><span class="line"><span class="comment">// &#123;</span></span><br><span class="line"><span class="comment">//     a=Object.create(A.prototype)</span></span><br><span class="line"><span class="comment">// &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 手写new </span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">newFunc</span>(<span class="params">Father</span>)&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">typeof</span> <span class="title class_">Father</span> !== <span class="string">&#x27;function&#x27;</span>)&#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">Error</span>(<span class="string">&#x27;newFunc的第一个参数必须是一个函数&#x27;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> obj=<span class="title class_">Object</span>.<span class="title function_">create</span>(<span class="title class_">Father</span>.<span class="property"><span class="keyword">prototype</span></span>)</span><br><span class="line">    <span class="keyword">var</span> result=<span class="title class_">Father</span>.<span class="title function_">apply</span>(obj,<span class="title class_">Array</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">slice</span>.<span class="title function_">call</span>(<span class="variable language_">arguments</span>,<span class="number">1</span>))</span><br><span class="line">    <span class="keyword">return</span> result &amp;&amp; <span class="keyword">typeof</span> result=== <span class="string">&#x27;object&#x27;</span> &amp;&amp; result!== <span class="literal">null</span> ? result :obj</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 调用</span></span><br><span class="line"><span class="keyword">const</span> p=<span class="title function_">newFunc</span>(<span class="title class_">Person</span>,name)<span class="comment">//Person是一个函数后面的是参数</span></span><br></pre></td></tr></table></figure></div></li>
-</ul>
-</li>
-</ul>
-<h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><p>实现一个继承，主要分为两个部分</p>
-<ul>
-<li>使用父类的构造函数方法和原型函数</li>
-<li>让对象的原型指向父类</li>
-</ul>
-<h3 id="原型继承"><a href="#原型继承" class="headerlink" title="原型继承"></a>原型继承</h3><div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">Parent</span>(<span class="params">name</span>)&#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">name</span>=name</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">Parent</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">getName</span>=<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">name</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">Child</span>(<span class="params"></span>)&#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">Child</span>.<span class="property"><span class="keyword">prototype</span></span>=<span class="keyword">new</span> <span class="title class_">Parent</span>()</span><br><span class="line"><span class="title class_">Child</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">constructor</span>=<span class="title class_">Child</span></span><br><span class="line"><span class="comment">// 隐含的问题</span></span><br><span class="line"><span class="comment">//1. 如果有属性是引用的属性，一旦某个实例修改这个属性，那么都会被修改</span></span><br><span class="line"><span class="comment">//2. 创建的Child的时候，是不能传参数的</span></span><br></pre></td></tr></table></figure></div>
-
-<h3 id="构造函数的继承"><a href="#构造函数的继承" class="headerlink" title="构造函数的继承"></a>构造函数的继承</h3><div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">  <span class="keyword">function</span> <span class="title function_">Parent</span>(<span class="params">name,age</span>)&#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">name</span>=name</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">age</span>=age</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">Child</span>(<span class="params">id</span>)&#123;</span><br><span class="line">    <span class="title class_">Parent</span>.<span class="title function_">apply</span>(<span class="variable language_">this</span>,<span class="title class_">Array</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">slice</span>.<span class="title function_">call</span>(<span class="variable language_">arguments</span>,<span class="number">1</span>))</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">id</span>=id</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 隐含的问题</span></span><br><span class="line"><span class="comment">// 1. 属性或者方法，想被继承的话，只能在构造函数中定义</span></span><br><span class="line"><span class="comment">// 2.如果方法在构造函数中定义了，每次都会创建</span></span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
-
-<h3 id="组合继承"><a href="#组合继承" class="headerlink" title="组合继承"></a>组合继承</h3><div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">  <span class="keyword">function</span> <span class="title function_">Parent</span>(<span class="params">name,age</span>)&#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">name</span>=name</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">age</span>=age</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">Parent</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">getName</span>=<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">name</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">Child</span>(<span class="params">id</span>)&#123;</span><br><span class="line">    <span class="title class_">Parent</span>.<span class="title function_">apply</span>(<span class="variable language_">this</span>,<span class="title class_">Array</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">slice</span>.<span class="title function_">call</span>(<span class="variable language_">arguments</span>,<span class="number">1</span>))<span class="comment">//又执行了一次</span></span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">id</span>=id</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="title class_">Child</span>.<span class="property"><span class="keyword">prototype</span></span>=<span class="keyword">new</span> <span class="title class_">Parent</span>()<span class="comment">//new Parent()执行一次</span></span><br><span class="line"><span class="title class_">Child</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">constructor</span>=<span class="title class_">Child</span></span><br></pre></td></tr></table></figure></div>
-
-<h3 id="组合寄生式继承"><a href="#组合寄生式继承" class="headerlink" title="组合寄生式继承"></a>组合寄生式继承</h3><div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">  <span class="keyword">function</span> <span class="title function_">Parent</span>(<span class="params">name,age</span>)&#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">name</span>=name</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">age</span>=age</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">Parent</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">getName</span>=<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">name</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">Child</span>(<span class="params">id</span>)&#123;</span><br><span class="line">    <span class="title class_">Parent</span>.<span class="title function_">apply</span>(<span class="variable language_">this</span>,<span class="title class_">Array</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">slice</span>.<span class="title function_">call</span>(<span class="variable language_">arguments</span>,<span class="number">1</span>))</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">id</span>=id</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 如果有Object.create</span></span><br><span class="line"><span class="title class_">Child</span>.<span class="property"><span class="keyword">prototype</span></span>=<span class="title class_">Object</span>.<span class="title function_">create</span>(<span class="title class_">Parent</span>.<span class="property"><span class="keyword">prototype</span></span>)</span><br><span class="line"><span class="comment">// 没有</span></span><br><span class="line"><span class="title class_">Child</span>.<span class="property"><span class="keyword">prototype</span></span>=<span class="title function_">inherit</span>(<span class="title class_">Parent</span>.<span class="property"><span class="keyword">prototype</span></span>)</span><br><span class="line"><span class="title class_">Child</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">constructor</span>=<span class="title class_">Child</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// const b=Objce.create(c)  -&gt; b.__proto__ = c</span></span><br><span class="line"><span class="comment">// b.__proto__ =function.prototype=c</span></span><br><span class="line"><span class="comment">// &#123;</span></span><br><span class="line"><span class="comment">//   function f()&#123;&#125;</span></span><br><span class="line"><span class="comment">//   f.prototype=c</span></span><br><span class="line"><span class="comment">//   return new f()</span></span><br><span class="line"><span class="comment">// &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 实现Object.create</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">inherit</span>(<span class="params">p</span>)&#123;</span><br><span class="line">    <span class="keyword">if</span>(p==<span class="literal">null</span>) <span class="keyword">throw</span> <span class="title class_">TypeError</span>()</span><br><span class="line">    <span class="keyword">if</span>(<span class="title class_">Object</span>.<span class="property">create</span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="title class_">Object</span>.<span class="title function_">create</span>(p)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> t= <span class="keyword">typeof</span> p</span><br><span class="line">    <span class="keyword">if</span>(t!== <span class="string">&#x27;object&#x27;</span> &amp;&amp; t!== <span class="string">&#x27;function&#x27;</span>)</span><br><span class="line">    <span class="keyword">throw</span> <span class="title class_">TypeError</span>()</span><br><span class="line">    <span class="keyword">function</span> <span class="title function_">f</span>(<span class="params"></span>)&#123;&#125;</span><br><span class="line">    f.<span class="property"><span class="keyword">prototype</span></span>=p</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="title function_">f</span>()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="组合寄生式继承-和-class继承有什么区别"><a href="#组合寄生式继承-和-class继承有什么区别" class="headerlink" title="组合寄生式继承 和 class继承有什么区别"></a>组合寄生式继承 和 class继承有什么区别</h3><ul>
-<li>class 继承，会继承静态属性</li>
-<li>子类中，必须在constructor调用super,因为子类自己的this对象，必须先通过父类的构造函数完成</li>
-</ul>
+            <p> React 构建用户界面时，首先会把它分解成一个个 组件，然后，需要把这些组件连接在一起，使数据流经它们。</p>
+<h2 id="从原型开始"><a href="#从原型开始" class="headerlink" title="从原型开始"></a>从原型开始</h2><h3 id="将UI拆解为组件层级结构"><a href="#将UI拆解为组件层级结构" class="headerlink" title="将UI拆解为组件层级结构"></a>将UI拆解为组件层级结构</h3><p>通俗来讲，就是将一个原型图,<strong>合理</strong>的拆分为多个组件</p>
+<h3 id="使用React构建一个静态版本"><a href="#使用React构建一个静态版本" class="headerlink" title="使用React构建一个静态版本"></a>使用React构建一个静态版本</h3><p>通过拥有的组件层级结构，构建一个不带任何交互的 UI 渲染代码版本,经常是先构建一个静态版本比较简单，然后再一个个添加交互。<br>构建一个静态版本需要写大量的代码，并不需要什么思考; 但添加交互需要大量的思考，却不需要大量的代码。</p>
+<h3 id="找出-UI-精简且完整的-state-表示"><a href="#找出-UI-精简且完整的-state-表示" class="headerlink" title="找出 UI 精简且完整的 state 表示"></a>找出 UI 精简且完整的 state 表示</h3><p>通俗说就是从静态版本中找出最小的state表示,而不是重复的定义相同功能的state<br>将 state 作为应用程序需要记住改变数据的最小集合。组织 state 最重要的一条原则是保持它 DRY（不要自我重复）</p>
+<p>举个例子，如果你正在构建一个购物列表，你可将他们在 state 中存储为数组。如果你同时想展示列表中物品数量，不需要将其另存为一个新的 state。取而代之，可以通过读取你数组的长度来实现。</p>
+<h4 id="标准"><a href="#标准" class="headerlink" title="标准"></a>标准</h4><p>随着时间推移 保持不变？是，便不是 state。<br>通过 props 从父组件传递？是，便不是 state。<br>是否可以基于已存在于组件中的 state 或者 props 进行计算？是，它肯定不是state！</p>
+<h3 id="验证-state-应该被放置在哪里"><a href="#验证-state-应该被放置在哪里" class="headerlink" title="验证 state 应该被放置在哪里"></a>验证 state 应该被放置在哪里</h3><p>提示：React 使用单向数据流，通过组件层级结构从父组件传递数据至子组件。</p>
+<p>通常情况下，可以直接放置 state 于它们共同的父组件。<br>也可以将 state 放置于它们父组件上层的组件。<br>如果找不到一个有意义拥有这个 state 的地方，单独创建一个新的组件去管理这个 state，并将它添加到它们父组件上层的某个地方。</p>
+<h3 id="添加反向数据流"><a href="#添加反向数据流" class="headerlink" title="添加反向数据流"></a>添加反向数据流</h3><p>通过上面的步骤,你的state应该都是从父组件流向子组件(通过prop传递),那么现在想要改变状态，需要绑定事件并使用父组件传递的hook来修改,这时数据就是从子组件流向父组件</p>
 
         </div>
 
@@ -670,18 +627,18 @@
             <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
                 <div class="article-copyright-info-container">
     <ul>
-        <li><strong>Title:</strong> 面向对象编程-原型，原型链</li>
+        <li><strong>Title:</strong> React哲学</li>
         <li><strong>Author:</strong> Gao Zeng Qing</li>
         <li><strong>Created at
-                :</strong> 2024-03-03 15:15:15</li>
+                :</strong> 2024-03-06 08:33:20</li>
         
             <li>
                 <strong>Updated at
-                    :</strong> 2024-03-04 17:36:04
+                    :</strong> 2024-03-06 09:11:37
             </li>
         
         <li>
-            <strong>Link:</strong> https://redefine.ohevan.com/2024/03/03/爪哇/2/
+            <strong>Link:</strong> https://redefine.ohevan.com/2024/03/06/react/React哲学/
         </li>
         <li>
             <strong>
@@ -703,7 +660,7 @@
             <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
                 
                     <li class="tag-item mx-0.5">
-                        <a href="/ZhiXingGe/tags/js/">#js</a>&nbsp;
+                        <a href="/ZhiXingGe/tags/React/">#React</a>&nbsp;
                     </li>
                 
             </ul>
@@ -717,13 +674,13 @@
                     <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
                         <a class="prev"
                         rel="prev"
-                        href="/ZhiXingGe/2024/03/04/%E7%88%AA%E5%93%87/3/"
+                        href="/ZhiXingGe/2024/03/06/%E7%88%AA%E5%93%87/6/"
                         >
                             <span class="left arrow-icon flex justify-center items-center">
                                 <i class="fa-solid fa-chevron-left"></i>
                             </span>
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">Promise</span>
+                                <span class="post-nav-title-item">js性能优化</span>
                                 <span class="post-nav-item">Prev posts</span>
                             </span>
                         </a>
@@ -733,10 +690,10 @@
                     <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
                         <a class="next"
                         rel="next"
-                        href="/ZhiXingGe/2024/03/02/%E6%89%8B%E5%86%99/call,apply,bind%E7%9A%84%E5%AE%9E%E7%8E%B0/"
+                        href="/ZhiXingGe/2024/03/06/react/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"
                         >
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">学习call,apply,bind的实现</span>
+                                <span class="post-nav-title-item">React常用知识总结</span>
                                 <span class="post-nav-item">Next posts</span>
                             </span>
                             <span class="right arrow-icon flex justify-center items-center">
@@ -799,8 +756,8 @@
             <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">On this page</div>
-        <div class="page-title">面向对象编程-原型，原型链</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="nav-text">创建对象的方式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Object-create-%E5%92%8C-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-text">Object.create() 和 {}的区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#new"><span class="nav-text">new</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#new-%E5%85%B3%E9%94%AE%E5%AD%97%E5%88%B0%E5%BA%95%E5%B9%B2%E4%BA%86%E4%BB%80%E4%B9%88"><span class="nav-text">new 关键字到底干了什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%A7%E6%89%BF"><span class="nav-text">继承</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8E%9F%E5%9E%8B%E7%BB%A7%E6%89%BF"><span class="nav-text">原型继承</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E7%9A%84%E7%BB%A7%E6%89%BF"><span class="nav-text">构造函数的继承</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%84%E5%90%88%E7%BB%A7%E6%89%BF"><span class="nav-text">组合继承</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%84%E5%90%88%E5%AF%84%E7%94%9F%E5%BC%8F%E7%BB%A7%E6%89%BF"><span class="nav-text">组合寄生式继承</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%84%E5%90%88%E5%AF%84%E7%94%9F%E5%BC%8F%E7%BB%A7%E6%89%BF-%E5%92%8C-class%E7%BB%A7%E6%89%BF%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB"><span class="nav-text">组合寄生式继承 和 class继承有什么区别</span></a></li></ol></li></ol></li></ol>
+        <div class="page-title">React哲学</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8E%E5%8E%9F%E5%9E%8B%E5%BC%80%E5%A7%8B"><span class="nav-text">从原型开始</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%86UI%E6%8B%86%E8%A7%A3%E4%B8%BA%E7%BB%84%E4%BB%B6%E5%B1%82%E7%BA%A7%E7%BB%93%E6%9E%84"><span class="nav-text">将UI拆解为组件层级结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8React%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9D%99%E6%80%81%E7%89%88%E6%9C%AC"><span class="nav-text">使用React构建一个静态版本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%89%BE%E5%87%BA-UI-%E7%B2%BE%E7%AE%80%E4%B8%94%E5%AE%8C%E6%95%B4%E7%9A%84-state-%E8%A1%A8%E7%A4%BA"><span class="nav-text">找出 UI 精简且完整的 state 表示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%AA%8C%E8%AF%81-state-%E5%BA%94%E8%AF%A5%E8%A2%AB%E6%94%BE%E7%BD%AE%E5%9C%A8%E5%93%AA%E9%87%8C"><span class="nav-text">验证 state 应该被放置在哪里</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E5%8F%8D%E5%90%91%E6%95%B0%E6%8D%AE%E6%B5%81"><span class="nav-text">添加反向数据流</span></a></li></ol></li></ol>
 
     </div>
 </div>
